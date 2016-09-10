@@ -1,0 +1,72 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+/*CSS - ESTILIZAÇÃO DA PÁGINA*/
+body {
+	background-color: ;
+	 }
+h1, h2{
+	font-family: 'Lobster', cursive;
+}
+/*Formatação dos campos de conteúdo (Barras: Central e Lateral)*/
+.f-logo {
+	width: 200px;
+	height: 130px;}
+.menu {
+	text-align: center;
+}
+.sidenav li a {
+	font-family: 'Lobster', cursive;
+	color: #FF4167;
+	font-size: 18px;
+	background: #;
+} 
+.sidenav li a:hover {
+	background: #F2F2F2;
+	color: black;
+}
+.sidenav {
+    padding: 15px;
+	position: static;
+    background-color:#CCBD97;
+    height: 100%;}
+.glyphicon-search {color: #FF4167;}
+/* */
+.social {
+	margin-top: 40%;
+}
+.genericon-twitter {color: blue;}
+h5 .label {
+	background: #FF4167;
+}
+
+.row.content {height: 1500px}
+footer {
+	margin-bottom: 0;
+	margin-top: 28%;
+	text-align: center;
+    color: #AD0D35;
+    border-bottom: 1px solid #ccc;
+}
+.social {
+	background: red;
+	height: 20px;
+	width: 100%;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.row.content {height: auto;}
+h4 img.f-logo {
+	width: 160px;
+	height: 90px;}
+}
+/*Videos - youtube*/
+section.videos img {
+	width: 230px;
+	height: 200px;
+	display: inline-block;
+	margin: 3px;
+}   
+section.videos img:hover {
+	-webkit-filter: grayscale(70%); /* Chrome, Safari, Opera */
+	filter: grayscale(70%);
+	color: white;
+}
