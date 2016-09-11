@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Adiciona Post</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="third-part\ckeditor\ckeditor.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo-post.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 form">
+				<div class="titulo"><h4>PAINEL DE CONTROLE (Post) </h4></div>
+				<form action="http://192.168.1.250:8080/api/post/add" method="POST">
+					<div class="id-post col-md-12">
+						<label>AUTOR:</label>
+						<input type="text" name="autor">
+						<label>TITULO DO POST:</label>
+						<input type="text" name="titulo">
+					</div>
+					<div  class="conteudo col-md-12">
+						<label>CONTEÚDO:</label><br>
+						<textarea id="conteudo" name="conteudo" class="post-conteudo" rows="3" required></textarea>
+					</div>
+					<div class="">
+						<input class="botao-enviar"type="submit">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		CKEDITOR.replace("conteudo");
+	</script>
+</body>
+</html>

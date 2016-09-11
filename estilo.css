@@ -1,3 +1,4 @@
+/*IMPORTAÇÃO DE FONTES*/
 @import 'https://fonts.googleapis.com/css?family=Lobster';
 /*CSS - ESTILIZAÇÃO DA PÁGINA*/
 body {
@@ -6,10 +7,9 @@ body {
 h1, h2{
 	font-family: 'Lobster', cursive;
 }
+
 /*Formatação dos campos de conteúdo (Barras: Central e Lateral)*/
-.f-logo {
-	width: 200px;
-	height: 130px;}
+
 .menu {
 	text-align: center;
 }
@@ -46,27 +46,50 @@ footer {
     color: #AD0D35;
     border-bottom: 1px solid #ccc;
 }
-.social {
-	background: red;
-	height: 20px;
+.img-grande {
 	width: 100%;
+	height: 500px;
+	border: 1px solid red;
+	margin-bottom: 2%;
 }
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-.row.content {height: auto;}
-h4 img.f-logo {
-	width: 160px;
-	height: 90px;}
-}
+/* * FORMULARIO COMENTARIOS*/
+fieldset > input, .form-control-coment {
+	background: white;
+	border: 1px solid red;}
+.form-control-coment {width: 80%;}
+.input-email {width: 250px;}
+form.comentarios {
+	width: 100%;
+	float: left;
+	border-right: 1px solid #ccc;
+	margin-right: 2%;}
+
 /*Videos - youtube*/
 section.videos img {
 	width: 230px;
 	height: 200px;
 	display: inline-block;
-	margin: 3px;
-}   
+	margin-left: 10px;
+}  
+section.videos {margin-bottom: 15%;} 
 section.videos img:hover {
-	-webkit-filter: grayscale(50%); /* Chrome, Safari, Opera */
+	-webkit-filter: grayscale(70%); /* Chrome, Safari, Opera */
 	filter: grayscale(70%);
-	color: white;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 500px) {
+.row.content {height: auto;}
+section.videos a img {
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+	margin: 3px;}   
+.img-grande {
+	width: 100%;
+	height: 300px;
+	border: 1px solid red;
+	margin-bottom: 2%;
+}
+
+
 }

@@ -1,0 +1,40 @@
+/*Formatação Form Post*/
+
+body {background:#0B486B; color: white;}
+.titulo {
+	margin-top: 25px;
+	width: 100%;
+	height: 40px;
+	color: #0B486B;
+	font-weight: bold;
+	text-align: center;
+}
+.form {
+	background: white;
+	color: #0B486B;
+	border: 1px solid #0B486B;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	border-radius: 10px;
+}
+form {
+	margin-top: 2%;
+	
+	}
+.id-post input {background: #0B486B;border: 1px solid #0B486B; color: white;}
+.conteudo {margin-top: 4%;}
+.post-conteudo {width: 1000px; height: 500px;}
+input.botao-enviar {
+	background: #0B486B; 
+	color: white; 
+	font-weight: bold;
+	border: 1px solid #0B486B;
+	width: 20%; 
+	margin-top: 5%; 
+	margin-bottom: 5%; 
+	margin-right: 1%;
+	float: right;}
+input.botao-enviar:hover {background: white; color:#0B486B; }
+
+
+
