@@ -1,0 +1,3 @@
+[submodule "dani_blog_backend"]
+	path = dani_blog_backend
+	url = https://github.com/akaarosh/dani_blog_backend
