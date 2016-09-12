@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Daniele Lima Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src='js/jquery-3.1.0.min.js'></script>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+<section class="social">
+     <div class="social">
+        <ul>
+          <li><a href=""><img src="img/redes-sociais/snapchat.png"></a></li>
+          <li><a href=""><img src="img/redes-sociais/twitter.png"></a></li>
+          <li><a href=""><img src="img/redes-sociais/facebook.png"></a></li>
+          <li><a href=""><img src="img/redes-sociais/youtube.png"></a></li>
+        </ul>
+      </div>
+</section>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     <!-- <h4><img class="f-logo" src="img/logo.jpg"></h4> -->
+      <ul class="nav nav-pills nav-stacked menu ">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Sobre</a></li>
+        <li><a href="#section3">Galeria</a></li>
+        <li><a href="#section3">Contato</a></li>
+        <li><a href="#section3">Meus Projetos</a></li>
+        <li><a href="#section3">Loja</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Pesquisar">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <h2>Meu primeiro post</h2>
+      <div class="img-media"></div>
+      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><br>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $.get("http://192.168.1.250:8080/api/post/list", function(data) {
+        for (i=0; i<data.length; i++) {
+            conteudo = $.parseHTML(data[i].conteudo);
+            document.getElementById("comments").innerHTML = conteudo;
+        }
+    })  
+</script>
+</body>
+</html>
